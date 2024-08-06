@@ -1,0 +1,687 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* -------------------------------------------- */
+
+/* --------------header------------------------------ */
+/* Navbar */
+
+header {
+  min-height: 70px;
+  max-width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+
+.logo {
+  font-size: 1.0em;
+  font-weight: bolder;
+  text-align: center;
+  width: 20%;
+}
+
+.logo span {
+  display: inline-block;
+  color: rgb(42, 208, 208);
+}
+
+
+nav {
+  position: fixed;
+  display: inline-flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+}
+
+.logo {
+  margin-top: 3%;
+  position: fixed;
+  display: inline-flex;
+  font-size: 2.4em;
+  color: #0B88F6;
+  margin-left: 0.4em;
+
+}
+
+.logo span {
+  color: orange;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  /* padding-left: 40%; */
+
+}
+
+.links a {
+text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 120px;
+  padding: 0 20px;
+  margin-top: 2%;
+  text-decoration: none;
+  color: #0B88F6;
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
+.links a.active {
+  color: orange;
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.first {
+
+  top: 100;
+  min-height: 100vh;
+  width: 100%;
+  background: url("https://media.istockphoto.com/id/1408518230/photo/underwater-sea-deep-water-abyss-with-blue-sun-light.jpg?s=612x612&w=0&k=20&c=QuLr_03dHceNYxdZQTek2l8TzFCxbP5zZnsFNYJwo0w=") center no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  top: 100px;
+  width: 100%;
+  height: 70%;
+}
+
+.img img {
+  top: 70px;
+  width: 100%;
+  min-height: 450px;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out;
+}
+
+.img img.im {
+  transform: translateY(-5%);
+}
+
+.first .content {
+  min-height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 4em;
+}
+
+.ppgh1 {
+  margin-top: 10px;
+  padding: 40px;
+  color: rgb(161, 160, 158);
+  line-height: 25px;
+
+}
+
+.ppgh {
+  color: rgb(161, 160, 158);
+  line-height: 24px;
+}
+
+.border {
+  border-top: 1px solid rgb(218, 215, 215);
+  border-bottom: 1px solid rgb(218, 215, 215);
+}
+
+.border .first {
+  padding: 0.4em;
+}
+
+/* ------------------------------------------ */
+#image1 {
+  border-radius: 10px;
+  transition: transition ease-in-out 1ms;
+}
+
+#movingImage2 {
+  border-radius: 10px;
+}
+
+/* ------------------------------------------ */
+.about {
+  grid-template-columns: repeat(2, 1fr);
+  background: transparent;
+  padding: 0 2em;
+  background: white;
+}
+
+.contentHead {
+  padding-top: 2em;
+  text-align: center;
+  background: white;
+}
+
+.about .ppgh {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.ppgh b {
+  color: black;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.transparent1 {
+  min-height: 300px;
+  padding: 5em 50px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 0;
+}
+
+.item {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+}
+
+.item i {
+  font-size: 3.2em;
+}
+
+.item b {
+  font-size: 5em;
+}
+
+.item span {
+  font-size: 1.5em;
+}
+
+.numbers-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0)), url("https://getwallpapers.com/wallpaper/full/4/2/d/772554-beach-sunset-wallpapers-2560x1600-for-computer.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.abc b {
+  color: rgb(11, 136, 246);
+}
+
+#first {
+  margin-top: 10px;
+  background-color: rgba(222, 128, 13, 0.1);
+}
+
+
+/* ---------------------------------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 5em 2em;
+}
+
+
+
+.gallery img {
+  width: 230px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  object-fit: cover;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.56);
+  padding: 2px 10px;
+  border-radius: 50%;
+}
+
+.close:hover {
+  color: black;
+}
+
+
+/* ---------------------------------- */
+.contactParent {
+  width: 100%;
+  min-height: 80vh;
+  background: url("https://images.squarespace-cdn.com/content/v1/64da46cb993c977a8241265d/3c061816-a8d5-4bc2-92f2-10efa8e26056/Fish-Lake-Trout.jpg") center no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.bt {
+  height: 480px;
+  width: 100%;
+  background-color: white;
+  padding: 2em;
+  padding-top: 3em;
+}
+
+.form {
+  padding: 2em;
+  background: black;
+  height: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form h2,
+.bt span {
+  color: white;
+  font-size: 1.6em;
+  text-transform: none;
+  font-weight: normal;
+  align-self: flex-start;
+  padding: 1em 0;
+  margin-left: 0.6em;
+}
+
+.form input,
+.form textarea {
+  background: transparent;
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.807);
+  padding: 1em 0;
+  margin-bottom: 1.2em;
+  color: rgb(255, 255, 255);
+}
+
+.bt span {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.bt p {
+  font-size: small;
+  color: rgb(135, 134, 133);
+  padding: 0.5em;
+  line-height: 18px;
+}
+
+.fs {
+  display: grid;
+  grid-template-columns: 10% 78%;
+  align-items: center;
+  gap: 2%;
+  padding: 0.5em 0;
+}
+
+.fs p {
+  font-size: smaller;
+}
+
+.fs i {
+  padding: 0 0.5em;
+}
+
+.fs b {
+  font-size: 1em;
+}
+
+
+/* ---------------------------------- */
+
+.footer .boxx-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  justify-content: space-evenly;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.887); */
+  background: rgb(0, 0, 0);
+  padding: 1em 2em;
+}
+
+.footer .boxx-container .box h4 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer .boxx-container .box a {
+  display: block;
+  font-size: 1em;
+  color: white;
+  padding: 1rem 0;
+  font-weight: lighter;
+}
+
+.footer .boxx-container .box a i {
+  padding-right: 0.5rem;
+  color: orange;
+}
+
+.footer .boxx-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .foot {
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  border-top: 0.1rem solid rgba(0, 0, 0, 1);
+  background-color: black;
+}
+
+.footer .foot span {
+  color: orange;
+}
+
+/* FOOTER ENDS */
+
+@media (max-width: 965px) {
+  .btns {
+    display: flex;
+    width: 400px;
+  }
+}
+
+@media (max-width: 850px) {
+  .links {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4em;
+    display: flex;
+    transition: right 0.3s ease;
+  }
+
+  .links a {
+    color: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    margin: 0.5em 0;
+  }
+
+  .first {
+    min-height: 750px;
+
+  }
+
+  .first .content {
+    height: 75%;
+    margin-left: 1em;
+  }
+
+  .contact {
+    grid-template-columns: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .btns {
+    width: 100%;
+    gap: 1em;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 630px) {
+  .first {
+    grid-template-columns: 100%;
+  }
+
+
+
+  .btns {
+    flex-direction: row;
+
+  }
+
+  #movingImage3 {
+    padding-top: 16em;
+    padding-bottom: 10em;
+  }
+
+  .item i {
+    font-size: 2.2em;
+  }
+
+  .item b {
+    font-size: 2.5em;
+  }
+
+  .item span {
+    font-size: 1em;
+  }
+
+  .transparent1 h2 {
+    font-size: 1.8em;
+  }
+
+  .transparent1 p {
+    font-size: 0.9em;
+  }
+
+  .footer .foot {
+    font-size: 1.2rem;
+  }
+
+  .back-to-top {
+    height: 40px;
+    width: 40px;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .logo {
+    font-size: 2.1em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .first .content {
+    margin: 1em;
+    padding-top: 6em;
+    padding-bottom: 7em;
+
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .item span {
+    font-size: 0.8em;
+  }
+
+  .links {
+    width: 250px;
+  }
+
+  body {
+    color: #000;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact {
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+
+  .footer .foot {
+    font-size: 1rem;
+  }
+}
+
+
+
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-45px);
+  }
+
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+}
+
+.container {
+  padding: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 250px;
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+
+
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: rgb(135, 133, 133);
+}
+
+h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 span {
+  color: orange;
+}
+
+.back-to-top {
+  position: sticky;
+  top: 90%;
+  left: 94%;
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
+
+}
+
+.btn {
+  outline: none;
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 1em 2em;
+  background: transparent;
+  color: orange;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.btn:hover {
+  background: #0B88F6;
+  color: white;
+  border: 1px solid orange;
+}
+
+.btn2 {
+  background: orange;
+  color: white;
+}
+
+.btn2:hover {
+  background: orange;
+  box-shadow: 2px 2px 10px orange;
+}
+
+/* -------------------------------------------- */
